@@ -1,0 +1,1 @@
+set shell=sh
