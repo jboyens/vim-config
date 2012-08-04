@@ -13,4 +13,4 @@ Running `vim` now will start the bootstrap process. You may have to mash `Enter`
 # Updating
 
 As long as your checkout is kept clean, you can easily update:
-    :BundleUpdate
+    `:BundleUpdate`
