@@ -19,10 +19,21 @@
 set nocompatible
 filetype off                   " required!
 
+if !isdirectory(expand("~/.vim/bundle/vundle"))
+  !mkdir -p ~/.vim/bundle
+  !git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+  let s:bootstrap=1
+endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 runtime! vundle.vim
+
+if exists("s:bootstrap") && s:bootstrap
+  unlet s:bootstrap
+  BundleInstall
+endif
 
 filetype plugin indent on
 syntax on
