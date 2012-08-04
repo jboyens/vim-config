@@ -10,21 +10,22 @@
 " merge between branches and repos.
 "
 " Please do not add configuration to this file, unless it *really* needs to
-" come first or last, like Pathogen and sourcing the machine-local config.
+" come first or last, like Vundle and sourcing the machine-local config.
 " Instead, add it to one of the files in .vim/init, or create a new one.
 
 
-" Pathogen (This must happen first.)
-" --------
+" Vundle (This must happen first.)
+" ------
+set nocompatible
+filetype off                   " required!
 
-filetype off                    " Avoid a Vim/Pathogen bug
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-set nocompatible                " Don't maintain compatibility with vi
-syntax on                       " Highlight known syntaxes
+runtime! vundle.vim
+
 filetype plugin indent on
-
+syntax on
 
 " Source initialization files
 " ---------------------------
