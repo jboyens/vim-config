@@ -1,5 +1,7 @@
 Bundle 'gmarik/vundle'
 
+" Bundle 'Peeja/vim-git-pair.git'
+
 Bundle 'git://gist.github.com/1486660.git'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'tpope/vim-rails.git'
@@ -19,11 +21,11 @@ Bundle 'tpope/vim-vividchalk.git'
 Bundle 'tpope/vim-ragtag.git'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'vim-scripts/molokai.git'
-Bundle 'Peeja/vim-git-pair.git'
 Bundle 'ecomba/vim-ruby-refactoring.git'
 Bundle 'godlygeek/tabular'
 Bundle 'kana/vim-textobj-user.git'
 Bundle 'mileszs/ack.vim.git'
+
 Bundle 'nelstrom/vim-textobj-rubyblock.git'
 Bundle 'pangloss/vim-javascript.git'
 Bundle 'plasticboy/vim-markdown.git'
