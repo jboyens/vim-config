@@ -36,6 +36,7 @@ if exists("s:bootstrap") && s:bootstrap
 endif
 
 filetype plugin indent on
+runtime! macros/matchit.vim
 syntax on
 
 " Source initialization files
